@@ -56,5 +56,9 @@ def run
     when "help"
       help
     when "exit"
-      
+      exit_jukebox
+      break
+    else
+      puts "Invalid input, please try again"
+    end
 end
