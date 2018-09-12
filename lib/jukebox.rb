@@ -31,7 +31,7 @@ def play(songs)
   if choice.to_i > 0 && choice.to_i <= 9
     puts "Playing #{songs[choice.to_i - 1]}"
   elsif  songs.each {|x| 
-    if x.include? choice then selection << x end}
+    if x.include? choice then selection << x else return false end}
     puts "Playing #{selection}"
   else
     puts "Invalid input, please try again"
