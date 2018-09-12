@@ -24,8 +24,10 @@ def list(songs)
   end
 end
 
-def play
+def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
-  if choice == 
+  if choice.is_a? Integer && choice > 0 && choice <= 9
+    puts "Playing #{songs[choice - 1]}"
+  elsif choice.
 end
