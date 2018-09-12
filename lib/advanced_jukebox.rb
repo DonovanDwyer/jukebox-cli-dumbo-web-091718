@@ -40,9 +40,9 @@ def play(my_songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
   selection = nil
-  songs.each do || 
-    if x.include? choice
-      selection = x
+  songs.each do |key, path| 
+    if key.include? choice
+      selection = key
       puts "Playing #{selection}"
     end
   end
