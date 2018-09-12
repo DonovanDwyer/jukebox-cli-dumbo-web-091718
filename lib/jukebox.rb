@@ -29,7 +29,7 @@ def play(songs)
   choice = gets.chomp
   selection = ""
   if choice.to_i > 0 && choice.to_i <= 9
-    puts "Playing #{songs[choice - 1]}"
+    puts "Playing #{songs[choice.to_i - 1]}"
   elsif  songs.each {|x| 
     if x.include? choice then selection << x end}
     puts "Playing #{selection}"
