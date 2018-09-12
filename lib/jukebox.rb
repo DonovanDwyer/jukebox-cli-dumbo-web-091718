@@ -48,6 +48,6 @@ def run
   while com != "exit"
     puts "Please enter a command:"
     com = gets.chomp
-    case(com)
+    case com
     when 
 end
