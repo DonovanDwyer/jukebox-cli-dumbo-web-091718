@@ -27,8 +27,27 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
+  selection = ""
   if choice.is_a? Integer && choice > 0 && choice <= 9
     puts "Playing #{songs[choice - 1]}"
-  elsif  songs.each {|x| x.include? choice}
-    puts "Playing #{
+  elsif  songs.each {|x| 
+    if x.include? choice then selection << x end}
+    puts "Playing #{selection}"
+  else
+    puts "Invalid input, please try again"
+  end  
+end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run
+  help
+  com = ""
+  while com != "exit"
+    puts "Please enter a command:"
+    com = gets.chomp
+    case(com)
+    when 
 end
