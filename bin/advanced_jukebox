@@ -4,13 +4,13 @@ require_relative "../lib/advanced_jukebox"
 
 
 my_songs = {
-"Go Go GO" => '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/01.mp3',
-"LiberTeens" => '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/02.mp3',
-"Hamburg" =>  '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/03.mp3',
-"Guiding Light" => '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/04.mp3',
-"Wolf" => '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/05.mp3',
-"Blue" => '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/06.mp3',
-"Graduation Failed" => '/home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/07.mp3'
+"Go Go GO" => 'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/01.mp3',
+"LiberTeens" => 'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/02.mp3',
+"Hamburg" =>  'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/03.mp3',
+"Guiding Light" => 'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/04.mp3',
+"Wolf" => 'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/05.mp3',
+"Blue" => 'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/06.mp3',
+"Graduation Failed" => 'home/DonovanDwyer/jukebox-cli-dumbo-web-091718/audio/Emerald-Park/07.mp3'
 }
 
 run(my_songs)
