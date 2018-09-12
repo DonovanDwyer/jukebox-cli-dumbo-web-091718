@@ -24,8 +24,9 @@ end
 
 
 def list(my_songs)
-  #this method is different! Collect the keys of the my_songs hash and 
-  #list the songs by name
+  my_songs.each do |song, path|
+    puts song
+  end
 end
 
 
@@ -40,7 +41,7 @@ def play(my_songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
   selection = nil
-  songs.each do |key, path| 
+  my_songs.each do |key, path| 
     if key.include? choice
       selection = key
       puts "Playing #{selection}"
