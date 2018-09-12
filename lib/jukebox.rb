@@ -27,17 +27,18 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
-  selection = ""
   if choice.to_i > 0 && choice.to_i <= 9
     puts "Playing #{songs[choice.to_i - 1]}"
   else
+    selection = ""
     songs.each do |x| 
       if x.include? choice
         selection << x
         puts "Playing #{selection}"
-      else
-       puts "Invalid input, please try again"
       end
+    end
+    if selection == ""
+      puts "Invalid input, please try again"
     end
   end
 end
