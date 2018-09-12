@@ -33,7 +33,7 @@ def play(songs)
     selection = nil
     songs.each do |x| 
       if x.include? choice
-        selection << x
+        selection = x
         puts "Playing #{selection}"
       end
     end
