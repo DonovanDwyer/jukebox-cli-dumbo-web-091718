@@ -49,5 +49,11 @@ def run
     puts "Please enter a command:"
     com = gets.chomp
     case com
-    when 
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "exit"
 end
