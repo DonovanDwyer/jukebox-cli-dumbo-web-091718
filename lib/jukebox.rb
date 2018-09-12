@@ -30,14 +30,14 @@ def play(songs)
   if choice.to_i > 0 && choice.to_i <= 9
     puts "Playing #{songs[choice.to_i - 1]}"
   else
-    selection = ""
+    selection = nil
     songs.each do |x| 
       if x.include? choice
         selection << x
         puts "Playing #{selection}"
       end
     end
-    if selection == ""
+    if selection == nil
       puts "Invalid input, please try again"
     end
   end
