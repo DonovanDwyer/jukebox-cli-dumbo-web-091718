@@ -30,12 +30,15 @@ def play(songs)
   selection = ""
   if choice.to_i > 0 && choice.to_i <= 9
     puts "Playing #{songs[choice.to_i - 1]}"
-  elsif  songs.each {|x| 
-    if x.include? choice then selection << x else return false end}
-    puts "Playing #{selection}"
   else
-    puts "Invalid input, please try again"
-  end  
+    songs.each do |x| 
+    if x.include? choice
+      selection << x
+      puts "Playing #{selection}"
+    else
+      puts "Invalid input, please try again"
+    end
+  end
 end
 
 def exit_jukebox
