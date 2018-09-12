@@ -45,7 +45,7 @@ def play(my_songs)
     if key.include? choice
       selection = key
       puts "Playing #{selection}"
-      system "open #{path}"
+      system 'open #{path}'
     end
   end
   if selection == nil
