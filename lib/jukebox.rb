@@ -32,11 +32,12 @@ def play(songs)
     puts "Playing #{songs[choice.to_i - 1]}"
   else
     songs.each do |x| 
-    if x.include? choice
-      selection << x
-      puts "Playing #{selection}"
-    else
-      puts "Invalid input, please try again"
+      if x.include? choice
+        selection << x
+        puts "Playing #{selection}"
+      else
+       puts "Invalid input, please try again"
+      end
     end
   end
 end
